@@ -1,23 +1,16 @@
 /*global styles and resets*/
 
-@import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700');font-family: 'Yantramanav', sans-serif;
-
-
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Sanchez');
 
 html,
 body {
-	
-padding: 0;
-margin: 0 auto;		
+	padding: 0;
+	margin: 0 auto;		
 
 }
 
-body {
-		margin: 0 auto;
-		padding: 0;
-}
 html {
-
 	box-sizing:border-box;
 }
 
@@ -27,7 +20,6 @@ html {
 }
 
 ul { 
-
 	list-style:none;
 	padding: 0;
  }
@@ -62,9 +54,8 @@ nav {
 	width:1400px;
 	background:#fff;
 	
-
-	
 }
+
 .main-nav ul {
 	
 	margin-left: 0;
@@ -114,8 +105,18 @@ ul :first-child a {
 	
 }
 
+h1, h2, h3, h4 {
+
+	font-family: 'Roboto+Condensed', sans-serif;
+	text-transform: capitalize;
+}
+
+p {
+	font-family: 'Sanchez', serif;
+}
+
 /*
-media-queries          I am having trouble solving this mobile first problem/ media query problem
+media-queries - I am having trouble solving this mobile first problem/ media query problem
 
 .row::after {
     content: "";
@@ -128,7 +129,7 @@ media-queries          I am having trouble solving this mobile first problem/ me
 }
 
 @media only screen and (min-width: 600px) {
-    For tablets
+   // For tablets
     .col-m-1 {width: 8.33%;}
     .col-m-2 {width: 16.66%;}
     .col-m-3 {width: 25%;}
@@ -141,7 +142,9 @@ media-queries          I am having trouble solving this mobile first problem/ me
     .col-m-10 {width: 83.33%;}
     .col-m-11 {width: 91.66%;}
     .col-m-12 {width: 100%;}
+	}
 }
+
 @media only screen and (min-width: 768px) {
      For desktop
     .col-1 {width: 8.33%;}
@@ -168,11 +171,9 @@ media-queries          I am having trouble solving this mobile first problem/ me
 }
 /*main content*/
 
-
 .callout  {
 	margin-left:450px;
 	margin-top: 80px;
-
 	
 }
 
@@ -180,7 +181,7 @@ media-queries          I am having trouble solving this mobile first problem/ me
 	
 	margin-top:50px;
 	margin-left:500px;
-	opacity:20%;
+	opacity:.5;
 }
 
 .call-out {
@@ -189,31 +190,29 @@ media-queries          I am having trouble solving this mobile first problem/ me
 	height: 900px;
 	background: url(https://media.self.com/photos/587fb60739d082f57cdffb8a/master/pass/first-boxing-class-boxer-situps.jpg);
 	background-repeat: no-repeat; 
-
 	
 }
+
  .call-out h2 {
 		
 	margin-left:100px;
 	margin-top: 25px;
 	text-transform: capitalize;
-	color: #907053;
+	color: rgb(148, 135, 135);
 	text-align: center;
 	
 }
 
-
 .call-out p {
 	
 	font-size: 24px;
-	color: #907053;
+	color: rgb(148, 135, 135);
 	text-align: center;
 
 }
 
 .call-out  p {
 	
-
 	border-top:  5px solid rgba(169, 152, 152, 0.5);
 
 }
@@ -229,28 +228,17 @@ media-queries          I am having trouble solving this mobile first problem/ me
 
 .main-content {
 
-	
 	margin: 0 auto;
 	font-family: 'Yantramanav', sans-serif;
 	
 }
 
-/* product-borders*/
-
-.product-borders {
-
-	margin-left: 55px;
-	border:5px solid rgba(169, 152, 152, .5);
-	width:1200px;
-}
-
 /*training*/
-
-
 
 .training-programs { 
 	padding:60px;
 	background-image: url(http://ampfitness.com/wp-content/uploads/2015/07/amp-kettlebells.jpg);
+	height:850px;
 }
 
 .training-programs h2 {
@@ -265,31 +253,29 @@ media-queries          I am having trouble solving this mobile first problem/ me
 .training-programs p {
 
 	margin-right:0;
-	font-size: 25px;
+	font-size: 35px;
 	color: #fff; 
 	border-top: 5px solid rgba(169, 152, 152, .5);
 	text-align:center;
 
 }
 
-.products img {
-
-	margin-left: 60px;
-}
-
 .benefits h2 { 
-	
 	padding-top: 30px;
 	border-top:5px solid rgba(169, 152, 152, .5);
 }
 
-.benefits  p { 
-		
+.benefits  h4 { 
+
 	padding: 20px;
+	color:#fff;
+	text-align: center;
 }
-.benefits > img {
-	background:
-	margin-bottom: 20px;
+
+.benefits img {
+	margin-top:100px;
+	margin-left: 72px;
+	margin-bottom: 30px;
 	padding:5px;
 	border-left: #fff 4px solid;
 	border-bottom: #fff 4px solid;
@@ -298,145 +284,94 @@ media-queries          I am having trouble solving this mobile first problem/ me
 }
 
 
-/*package-prices*/
-
-.benefits img {
-	
-	margin-left: 68px;
-	margin-bottom: 30px;
-}
-
-
-
-
- .benefits  img {
-
-    border-right: #fff 5px dotted;
-  
-
-}
-
-
-
 /* training menu */ 
 
 
 .training-menus {
-	
 	margin-bottom: 100px;
 	width:1440px;
-	height: 1628px;
+	height:1428px;
 	background:url(http://www.ezflexmats.com/images/large/color_tatami_BK.jpg);
 	/*background-image: url(http://previews.123rf.com/images/grapix/grapix1311/grapix131100003/23649002-aikido-gi-Stock-Photo-karate-dojo-jitsu.jpg);
 	background-repeat: no-repeat;*/
 	
-
 }
 
 
 .strength-training-menu,
 .jujitstu-menu,
-.high-intensity-training-menu,
+.group-training-menu,
 .muaythai-menu {
 
-margin:90px;
-padding:10px;
-width: 400px;
-height: 550px;
-background: #fff;
-border:5px solid rgba(169, 152, 152, .5);
-float: left;
-
-
+	margin:90px;
+	padding:10px;
+	width: 300px;
+	height: 450px;
+	background: #fff;
+	border:5px solid rgba(169, 152, 152, .5);
+	float: left;
 	
 }
 
-
-
 .strength-training-menu> h2,
 .jujitstu-menu> h2,
-.high-intensity-training-menu> h2,
+.group-training-menu> h2,
 .muaythai-menu > h2 {
 
-
-		width: 400px;
-		border-bottom: #333 4px solid;
-		color: #333;
-		text-align: center;
-
-}
-
-
-
-
-
-.strength-training-menu > h4,
-.jujitstu-menu > h4,
-.high-intensity-training-menu > h4,
-.muaythai-menu  > h4 {
-
+	width: 300px;
+	border-bottom: #333 4px solid;
 	color: #333;
 	text-align: center;
-	text-transform: capitalize;
-}
 
+}
 
 .strength-training-menu > p,
 .jujitstu-menu > p,
-.high-intensity-training-menu > p,
+.group-training-menu > p,
 .muaythai-menu> p {
 
 	color: #333;
 }
 
-
-
 .strength-training-menu, 
-.high-intensity-training-menu {
+.group-training-menu {
 
-	margin-left: 205px;
+	margin-left: 285px;
+	
 }
-
 
 
 aside > button {
 
-	margin-top:200px;
-	margin-left:151px;
+	margin-top:100px;
+	margin-left:100px;
 	padding: 10px;
 	text-align: center;
 	background-color: #818e81;
-	
 
 	} 
 
-
-
-
 /* our story */
 
-.our-story {
+.my-story {
 
-width: 1400px;
-height: 700px;
-margin:0 auto;
+	width: 1400px;
+	height: 600px;
+	margin:0 auto;
 
 }
 
-.our-story h2 {
+.my-story h2 {
 
  	font-size: 40px;
 	color:#333;
 	letter-spacing: .1em;
 	text-align:center;
 
-
 }
 
 article > h4 {
 
-	
-	
 	color: #333;
 	margin-left:390px;
 	margin-bottom:100px;
@@ -447,61 +382,48 @@ article > h4 {
 }
 
 
-.our-story p  { 
+.my-story p  { 
 
 	color: #333;
 	width:460px;
 	text-align: center;
 	margin-left:200px;
 
-
-
-
  }
 
-
-.our-story img {
-
+.my-story img {
 
 	margin-right: 200px;
 	float: right;
 
 }
 
-
 /*form*/ 
-
-
 
 fieldset > input {
 	margin-left: 50px;
 	padding:20px;
 	width: 300px;
+	text-transform: capitalize;
 
 	}
 
-
-
  fieldset {
-background: url(http://www.ezflexmats.com/images/large/color_tatami_BK.jpg);
-	
+
+	background: url(http://www.ezflexmats.com/images/large/color_tatami_BK.jpg);
 	
 }
-
 
 [name~="yourname"] {
 
 	margin-left: 300px;
 }
 
-
-
 [name~="email"] { 
-		margin-top:50px;
-		margin-left:300px;
-		width:700px;
- }
-
+	margin-top:50px;
+	margin-left:300px;
+	width:700px;
+}
 
 [name~="yourname"], 
 [name~="phone"] {
@@ -509,13 +431,11 @@ background: url(http://www.ezflexmats.com/images/large/color_tatami_BK.jpg);
    margin-top: 100px;
 }
 
-
 [name~="message"] {
 	margin-top: 50px;
 	margin-left: 300px;
 	
 }
-
 
 fieldset > button {
 	margin-top:20px;
@@ -569,6 +489,20 @@ footer  a {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

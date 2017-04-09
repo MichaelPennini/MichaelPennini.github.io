@@ -1,0 +1,541 @@
+/*global styles and resets*/
+
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Sanchez');
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;		
+
+}
+
+html {
+	box-sizing:border-box;
+}
+
+* , *: before, * :after {
+
+	box-sizing: inherit;
+}
+
+ul { 
+	list-style:none;
+	padding: 0;
+ }
+
+ a {
+
+ 	text-decoration: none;
+ }
+
+
+ .cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    * zoom: 1;
+}
+
+/*navigation*/
+
+nav {
+	
+	margin: 0;
+	padding:25px;
+	position:fixed;
+	width:1400px;
+	background:#fff;
+	
+}
+
+.main-nav ul {
+	
+	margin-left: 0;
+	margin-top:0;
+
+}
+
+.main-nav a:hover {
+	box-shadow:0 0 1px 1px #102447;
+}
+
+.main-nav a {
+	
+	padding-right:10px;
+	padding-left:12px;
+	font-weight: 100;
+	font-size: 18px;
+	text-align: right;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	color:#42210B;
+	font-family: "league_gothicregular", "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
+	float:right;
+
+}
+
+[alt~="shopping-cart"] {
+
+	width:5px;
+	height:5px;
+}
+
+ul :first-child a {
+	
+	width: 254px;
+	margin-left: 100px;
+	padding:0;
+	font-weight: 100;
+	font-size: 18px;
+	text-align: left;
+	text-transform: uppercase;
+	letter-spacing: 4px;	
+	color:#666;
+	list-style: none;
+	font-family: "league_gothicregular", "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
+	float: left;
+	
+}
+
+h1, h2, h3, h4 {
+
+	font-family: 'Roboto+Condensed', sans-serif;
+	text-transform: capitalize;
+}
+
+p {
+	font-family: 'Sanchez', serif;
+}
+
+/*
+media-queries - I am having trouble solving this mobile first problem/ media query problem
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+   // For tablets
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+     For desktop
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+ 
+*/
+
+/*page-wrapper*/
+
+.page-wrapper {
+
+
+}
+/*main content*/
+
+.callout  {
+	margin-left:450px;
+	margin-top: 80px;
+	
+}
+
+.logo {
+	
+	margin-top:50px;
+	margin-left:500px;
+	opacity:.5;
+}
+
+.call-out {
+
+	margin-left:93px;
+	height: 900px;
+	background: url(https://media.self.com/photos/587fb60739d082f57cdffb8a/master/pass/first-boxing-class-boxer-situps.jpg);
+	background-repeat: no-repeat; 
+	
+}
+
+ .call-out h2 {
+		
+	margin-left:100px;
+	margin-top: 25px;
+	text-transform: capitalize;
+	color: rgb(148, 135, 135);
+	text-align: center;
+	
+}
+
+.call-out p {
+	
+	font-size: 24px;
+	color: rgb(148, 135, 135);
+	text-align: center;
+
+}
+
+.call-out  p {
+	
+	border-top:  5px solid rgba(169, 152, 152, 0.5);
+
+}
+
+.call-out-container {
+	/*border: 5px dashed rgba(70, 104, 134, 0.73); */
+	width:650px;
+	margin-left:300px;
+	
+}
+
+
+
+.main-content {
+
+	margin: 0 auto;
+	font-family: 'Yantramanav', sans-serif;
+	
+}
+
+/*training*/
+
+.training-programs { 
+	padding:60px;
+	background-image: url(http://ampfitness.com/wp-content/uploads/2015/07/amp-kettlebells.jpg);
+	height:850px;
+}
+
+.training-programs h2 {
+
+	margin-top: 25px;
+	text-transform: capitalize;
+	color: #fff;
+	text-align:center;
+	
+}
+
+.training-programs p {
+
+	margin-right:0;
+	font-size: 35px;
+	color: #fff; 
+	border-top: 5px solid rgba(169, 152, 152, .5);
+	text-align:center;
+
+}
+
+.benefits h2 { 
+	padding-top: 30px;
+	border-top:5px solid rgba(169, 152, 152, .5);
+}
+
+.benefits  h4 { 
+
+	padding: 20px;
+	color:#fff;
+	text-align: center;
+}
+
+.benefits img {
+	margin-top:100px;
+	margin-left: 72px;
+	margin-bottom: 30px;
+	padding:5px;
+	border-left: #fff 4px solid;
+	border-bottom: #fff 4px solid;
+	border-right: #fff 4px dotted;
+	border-top: #fff 4px solid;
+}
+
+
+/* training menu */ 
+
+
+.training-menus {
+	margin-bottom: 100px;
+	width:1440px;
+	height:1428px;
+	background:url(http://www.ezflexmats.com/images/large/color_tatami_BK.jpg);
+	/*background-image: url(http://previews.123rf.com/images/grapix/grapix1311/grapix131100003/23649002-aikido-gi-Stock-Photo-karate-dojo-jitsu.jpg);
+	background-repeat: no-repeat;*/
+	
+}
+
+
+.strength-training-menu,
+.jujitstu-menu,
+.group-training-menu,
+.muaythai-menu {
+
+	margin:90px;
+	padding:10px;
+	width: 300px;
+	height: 450px;
+	background: #fff;
+	border:5px solid rgba(169, 152, 152, .5);
+	float: left;
+	
+}
+
+.strength-training-menu> h2,
+.jujitstu-menu> h2,
+.group-training-menu> h2,
+.muaythai-menu > h2 {
+
+	width: 300px;
+	border-bottom: #333 4px solid;
+	color: #333;
+	text-align: center;
+
+}
+
+.strength-training-menu > p,
+.jujitstu-menu > p,
+.group-training-menu > p,
+.muaythai-menu> p {
+
+	color: #333;
+}
+
+.strength-training-menu, 
+.group-training-menu {
+
+	margin-left: 285px;
+	
+}
+
+
+aside > button {
+
+	margin-top:100px;
+	margin-left:100px;
+	padding: 10px;
+	text-align: center;
+	background-color: #818e81;
+
+	} 
+
+/* our story */
+
+.my-story {
+
+	width: 1400px;
+	height: 600px;
+	margin:0 auto;
+
+}
+
+.my-story h2 {
+
+ 	font-size: 40px;
+	color:#333;
+	letter-spacing: .1em;
+	text-align:center;
+
+}
+
+article > h4 {
+
+	color: #333;
+	margin-left:390px;
+	margin-bottom:100px;
+	width:600px;
+	border-bottom: #333 3px solid;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+
+.my-story p  { 
+
+	color: #333;
+	width:460px;
+	text-align: center;
+	margin-left:200px;
+
+ }
+
+.my-story img {
+
+	margin-right: 200px;
+	float: right;
+
+}
+
+/*form*/ 
+
+fieldset > input {
+	margin-left: 50px;
+	padding:20px;
+	width: 300px;
+	text-transform: capitalize;
+
+	}
+
+ fieldset {
+
+	background: url(http://www.ezflexmats.com/images/large/color_tatami_BK.jpg);
+	
+}
+
+[name~="yourname"] {
+
+	margin-left: 300px;
+}
+
+[name~="email"] { 
+	margin-top:50px;
+	margin-left:300px;
+	width:700px;
+}
+
+[name~="yourname"], 
+[name~="phone"] {
+
+   margin-top: 100px;
+}
+
+[name~="message"] {
+	margin-top: 50px;
+	margin-left: 300px;
+	
+}
+
+fieldset > button {
+	margin-top:20px;
+	margin-left:630px;
+	padding:10px;
+	width:100px;
+	border-radius:10%;
+}
+
+
+fieldset > h2 {
+
+	margin:auto;
+	margin-top:20px;
+	width:380px;
+	text-align:center;
+	border-bottom: #fff solid 5px; 
+	color:#fff;
+}
+
+
+input:hover {
+	
+	box-shadow:0 0 1px 1px red;
+}
+
+button:hover {
+
+	box-shadow:0 0 1px 1px red;
+}
+
+textarea:hover {
+
+	box-shadow:0 0 1px 1px red;
+
+}
+
+/*footer*/
+
+footer {
+
+	margin:0;
+
+}
+footer  a {
+
+	margin-left: 260px;
+	padding:20px;
+	float:left;
+	color: #333;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
