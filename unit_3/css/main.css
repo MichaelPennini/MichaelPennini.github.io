@@ -109,6 +109,7 @@ h1, h2, h3, h4 {
 
 	font-family: 'Roboto+Condensed', sans-serif;
 	text-transform: capitalize;
+	display: inline-block;
 }
 
 p {
@@ -294,7 +295,6 @@ media-queries - I am having trouble solving this mobile first problem/ media que
 	background:url(http://www.ezflexmats.com/images/large/color_tatami_BK.jpg);
 	/*background-image: url(http://previews.123rf.com/images/grapix/grapix1311/grapix131100003/23649002-aikido-gi-Stock-Photo-karate-dojo-jitsu.jpg);
 	background-repeat: no-repeat;*/
-	
 }
 
 
@@ -310,7 +310,6 @@ media-queries - I am having trouble solving this mobile first problem/ media que
 	background: #fff;
 	border:5px solid rgba(169, 152, 152, .5);
 	float: left;
-	
 }
 
 .strength-training-menu> h2,
@@ -322,7 +321,6 @@ media-queries - I am having trouble solving this mobile first problem/ media que
 	border-bottom: #333 4px solid;
 	color: #333;
 	text-align: center;
-
 }
 
 .strength-training-menu > p,
@@ -337,7 +335,6 @@ media-queries - I am having trouble solving this mobile first problem/ media que
 .group-training-menu {
 
 	margin-left: 285px;
-	
 }
 
 
@@ -358,7 +355,6 @@ aside > button {
 	width: 1400px;
 	height: 600px;
 	margin:0 auto;
-
 }
 
 .my-story h2 {
@@ -367,7 +363,6 @@ aside > button {
 	color:#333;
 	letter-spacing: .1em;
 	text-align:center;
-
 }
 
 article > h4 {
@@ -388,14 +383,12 @@ article > h4 {
 	width:460px;
 	text-align: center;
 	margin-left:200px;
-
  }
 
 .my-story img {
 
 	margin-right: 200px;
 	float: right;
-
 }
 
 /*form*/ 
@@ -470,7 +463,6 @@ button:hover {
 textarea:hover {
 
 	box-shadow:0 0 1px 1px red;
-
 }
 
 /*footer*/
@@ -478,16 +470,14 @@ textarea:hover {
 footer {
 
 	margin:0;
-
 }
+
 footer  a {
 
 	margin-left: 260px;
 	padding:20px;
 	float:left;
 	color: #333;
-
-
 }
 
 

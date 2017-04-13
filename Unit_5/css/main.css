@@ -1,0 +1,36 @@
+
+
+nav {
+
+  background: #E8C66A;
+  border: 1px black solid;
+  padding: 20px;
+}
+
+header  {
+
+  background: #FFED74;
+  border: 1px black solid;
+  padding: 20px;
+}
+
+aside {
+
+  background: #FFC675;
+  border: 1px black solid;
+  padding: 20px;
+}
+
+section {
+
+  background: #E89C6C;
+  border: 1px black solid;
+  padding: 20px;
+}
+
+footer {
+
+  background:#FFE2B8;
+  border: 1px black solid;
+  padding: 20px;
+}
