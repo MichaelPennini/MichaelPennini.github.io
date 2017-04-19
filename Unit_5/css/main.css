@@ -1,10 +1,16 @@
+.wrapper {
 
+    background:#FFE2B8;
+    padding: 2%;
+
+}
 
 nav {
 
   background: #E8C66A;
   border: 1px black solid;
   padding: 20px;
+  
 }
 
 header  {
@@ -12,6 +18,7 @@ header  {
   background: #FFED74;
   border: 1px black solid;
   padding: 20px;
+
 }
 
 aside {
@@ -19,6 +26,7 @@ aside {
   background: #FFC675;
   border: 1px black solid;
   padding: 20px;
+
 }
 
 section {
@@ -30,7 +38,7 @@ section {
 
 footer {
 
-  background:#FFE2B8;
+  background: #FF957E;
   border: 1px black solid;
   padding: 20px;
 }

@@ -30,7 +30,7 @@ ul {
  }
 
 
- .cf:before,
+.cf:before,
 .cf:after {
     content: " ";
     display: table;
@@ -52,8 +52,7 @@ nav {
 	padding:25px;
 	position:fixed;
 	width:1400px;
-	background:#fff;
-	
+	background:#fff;	
 }
 
 .main-nav ul {
@@ -79,7 +78,6 @@ nav {
 	color:#42210B;
 	font-family: "league_gothicregular", "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
 	float:right;
-
 }
 
 [alt~="shopping-cart"] {
@@ -220,8 +218,7 @@ media-queries - I am having trouble solving this mobile first problem/ media que
 .call-out-container {
 	/*border: 5px dashed rgba(70, 104, 134, 0.73); */
 	width:650px;
-	margin-left:300px;
-	
+	margin-left:300px;	
 }
 
 
@@ -229,8 +226,7 @@ media-queries - I am having trouble solving this mobile first problem/ media que
 .main-content {
 
 	margin: 0 auto;
-	font-family: 'Yantramanav', sans-serif;
-	
+	font-family: 'Yantramanav', sans-serif;	
 }
 
 /*training*/
@@ -336,8 +332,7 @@ media-queries - I am having trouble solving this mobile first problem/ media que
 .strength-training-menu, 
 .group-training-menu {
 
-	margin-left: 285px;
-	
+	margin-left: 285px;	
 }
 
 
@@ -348,8 +343,7 @@ aside > button {
 	padding: 10px;
 	text-align: center;
 	background-color: #818e81;
-
-	} 
+} 
 
 /* our story */
 
@@ -395,7 +389,6 @@ article > h4 {
 
 	margin-right: 200px;
 	float: right;
-
 }
 
 /*form*/ 
@@ -406,7 +399,7 @@ fieldset > input {
 	width: 300px;
 	text-transform: capitalize;
 
-	}
+}
 
  fieldset {
 
