@@ -1,4 +1,4 @@
-Í
+
 
 .clearfix:after {
     visibility: hidden;
@@ -9,12 +9,19 @@
     height: 0;
 }
 
+.wrapper {
+
+    background:#FFE2B8;
+    padding: 2%;
+
+}
+
 nav {
 
   background: #E8C66A;
   border: 1px black solid;
   padding: 20px;
-
+  
 }
 
 header  {
@@ -43,21 +50,35 @@ section {
 
 footer {
 
-  background:#FFE2B8;
+  background: #FF957E;
   border: 1px black solid;
   padding: 20px;
+  clear: both;
 
 }
 
 
-#two_column {
+.two_column {
 
   background-color: #FFB7CF;
   border: 1px black solid;
   padding: 20px;
+  height:500px;
 
 }
 
+.two_column > aside {
+
+    background-color: violet;
+    border: 1px black solid;
+    padding: 20px;
+    float:left;
+    width: 30%;
+    margin-left:200px;
+    margin-top:25px;
+
+}
+/*
 #left {
 
   background-color: violet;
@@ -66,18 +87,22 @@ footer {
   float: left;
   width: 30%
 
-}
+}*/
 
-#right {
+/*#right {
 
   background-color: pink;
   border: 1px black solid;
   padding: 20px;
   float: right;
-  width: 62%
+  width: 62%*/
 
 }
 
+#aboutme {
+
+  clear:both;
+}
 
 
 
