@@ -2,118 +2,67 @@
 
 @import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Sanchez');
-
-html,
-body {
-	padding: 0;
-	margin: 0 auto;		
-
-}
-
-
-
-
 html {
 	box-sizing:border-box;
 }
-
-* , *: before, * :after {
-
+* , *:before, *:after {
 	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
 }
-
+body {
+	color:#333;
+	font-family: 'Sanchez', serif;
+	font-size:18px;
+	line-height:1.3;
+}
 ul { 
 	list-style:none;
-	padding: 0;
- }
-
- a {
-
+}
+a {
  	text-decoration: none;
- }
-
-
-.cf:before,
-.cf:after {
-    content: " ";
-    display: table;
 }
-
-.cf:after {
+.cf:after,.clearfix:after {
+	display:block;
     clear: both;
-}
-
-.cf {
-    * zoom: 1;
+    height:0;
+    visibility:hidden;
+    content:"";
 }
 
 /*navigation*/
 
 nav {
-	
-	margin: 0;
-	padding:25px;
-	position:fixed;
-	width:1400px;
-	background:#fff;	
+	float: right;
+	background:#fff;
+	padding:.5em;
 }
-
-.main-nav ul {
-	
-	margin-left: 0;
-	margin-top:0;
-
-}
-
-.main-nav a:hover {
-	box-shadow:0 0 1px 1px #102447;
-}
-
 .main-nav a {
-	
-	padding-right:10px;
-	padding-left:12px;
+	border-bottom: 1px solid #fff;
+	padding:1em 2em;
+	display:inline-block;
 	font-weight: 100;
-	font-size: 18px;
 	text-align: right;
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	color:#42210B;
 	font-family: "league_gothicregular", "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
-	float:right;
 }
-
+.main-nav a:hover {
+	border-bottom:1px solid #102447;
+}
 [alt~="shopping-cart"] {
 
 	width:5px;
 	height:5px;
 }
-
-ul :first-child a {
-	
-	width: 254px;
-	margin-left: 100px;
-	padding:0;
-	font-weight: 100;
-	font-size: 18px;
-	text-align: left;
-	text-transform: uppercase;
-	letter-spacing: 4px;	
-	color:#666;
-	list-style: none;
-	font-family: "league_gothicregular", "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
-	float: left;
-	
-}
-
 h1, h2, h3, h4 {
-
 	font-family: 'Roboto+Condensed', sans-serif;
 	text-transform: capitalize;
 }
 
 p {
-	font-family: 'Sanchez', serif;
+	
 }
 
 /*
@@ -179,29 +128,15 @@ media-queries - I am having trouble solving this mobile first problem/ media que
 }
 
 .logo {
-	
-	margin-top:50px;
-	margin-left:500px;
-	opacity:.5;
+	opacity: .75;
 }
 
-.call-out {
-
-	margin-left:93px;
-	height: 900px;
-	background: url(https://media.self.com/photos/587fb60739d082f57cdffb8a/master/pass/first-boxing-class-boxer-situps.jpg);
-	background-repeat: no-repeat; 
-	
-}
+.call-out {height: 900px;background: url(https://media.self.com/photos/587fb60739d082f57cdffb8a/master/pass/first-boxing-class-boxer-situps.jpg);background-repeat: no-repeat;background-size: cover;text-align: center;padding-top: 2em;}
 
  .call-out h2 {
-		
-	margin-left:100px;
-	margin-top: 25px;
-	text-transform: capitalize;
-	color: rgb(148, 135, 135);
-	text-align: center;
-	
+		margin-top: 25px;
+		text-transform: capitalize;
+		color: rgb(148, 135, 135);
 }
 
 .call-out p {
@@ -220,8 +155,8 @@ media-queries - I am having trouble solving this mobile first problem/ media que
 
 .call-out-container {
 	/*border: 5px dashed rgba(70, 104, 134, 0.73); */
-	width:650px;
-	margin-left:300px;	
+	text-align: center;
+	display: inline-block;
 }
 
 
@@ -234,10 +169,12 @@ media-queries - I am having trouble solving this mobile first problem/ media que
 
 /*training*/
 
-.training-programs { 
+.training-programs {
 	padding:60px;
 	background-image: url(http://ampfitness.com/wp-content/uploads/2015/07/amp-kettlebells.jpg);
 	height:850px;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .training-programs h2 {
@@ -293,7 +230,6 @@ media-queries - I am having trouble solving this mobile first problem/ media que
 	background:url(http://www.ezflexmats.com/images/large/color_tatami_BK.jpg);
 	/*background-image: url(http://previews.123rf.com/images/grapix/grapix1311/grapix131100003/23649002-aikido-gi-Stock-Photo-karate-dojo-jitsu.jpg);
 	background-repeat: no-repeat;*/
-	
 }
 
 
@@ -395,53 +331,26 @@ article > h4 {
 }
 
 /*form*/ 
-
-fieldset > input {
-	margin-left: 50px;
+fieldset {
+	width:600px;
+	margin:auto;
+	border: none;
+}
+fieldset > input,textarea {
 	padding:20px;
-	width: 300px;
+	display: block;
 	text-transform: capitalize;
-
+	width: 100%;
+	margin-bottom: 1em;
 }
-
- fieldset {
-
-	background: url(http://www.ezflexmats.com/images/large/color_tatami_BK.jpg);
-	
-}
-
-[name~="yourname"] {
-
-	margin-left: 300px;
-}
-
-[name~="email"] { 
-	margin-top:50px;
-	margin-left:300px;
-	width:700px;
-}
-
-[name~="yourname"], 
-[name~="phone"] {
-
-   margin-top: 100px;
-}
-
-[name~="message"] {
-	margin-top: 50px;
-	margin-left: 300px;
-	
-}
-
+form {background: url(http://www.ezflexmats.com/images/large/color_tatami_BK.jpg);padding: 1em;}
 fieldset > button {
 	margin-top:20px;
-	margin-left:630px;
 	padding:10px;
 	width:100px;
+	display: block;
 	border-radius:10%;
 }
-
-
 fieldset > h2 {
 
 	margin:auto;
@@ -485,53 +394,3 @@ footer  a {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
