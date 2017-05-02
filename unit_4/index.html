@@ -1,132 +1,92 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Personal Training Website</title>
-<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<link rel="stylesheet" type="text/css" href="css/reset.css">
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Training Website</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
-<div class="page-wrapper">
     <header class="cf">    
-      <div class="row">
         <nav class="main-nav col-3 col-m-3">
-                <ul>
-                    <li><a href="#">personal training</a></li> 
-                    <!-- <li><a href="#">products</a></li> -->
-                    <li><a href="#menus"><!--<img src="assets/images/shopping-cart.png" alt="shopping-cart">-->shop</a></li>
-                    <li><a href="#myStory">about</a></li>
-                    <li><a href="#form">contact</a></li> 
-                    <li><a href="#">sign in</a></li>  
-                 </ul>                 
-            </nav>
-        </div>
+                <a href="#">personal training</a>
+                <!-- <a href="#">products</a> -->
+                <a href="#menus"><!--<img src="assets/images/shopping-cart.png" alt="shopping-cart">-->shop</a>
+                <a href="#myStory">about</a>
+                <a href="#form">contact</a>
+                <a href="#">sign in</a>               
+        </nav>
     </header>
-
-    
     <main class="main-content cf">
         <section class="call-out ccol-6 col-m-9" id="callout">
                 <img src="https://images.vexels.com/media/users/3/130339/isolated/lists/60507d73b42c933bf21c87bb2582939f-flat-boxing-gloves-icon.png" class="logo" alt="boxing glove logo" title="boxing glove drawing">
-            <div class="call-out-container">
-                <h2>train. diet. live.</h2>
-                <p>your heatlh is your best investment, start investing now! </p>
+                <div class="call-out-container">
+                    <h2>train. diet. live.</h2>
+                    <p>your heatlh is your best investment, start investing now! </p>
+                </div>
+        </section>
+        <section class="training-programs ccol-6 col-m-9">
+            <h2>custom training programs</h2>
+            <section class="benefits" id="trainingPrograms">
+                    <h3>see and feel the results of effective training programs</h3>
+                    <a href="#"><img src="images/weightlifter.jpg" alt="barbell"></a>
+                    <a href="#"><img src="http://www.yardbarker.com/uploads/logo/image/2165/140107_icons_boxing.jpg" alt="boxing" title="Boxing gloves"></a>
+                    <a href="#"><img src="http://worldartsme.com/images/kettlebell-clipart-1.jpg" alt="kettlebell" title="kettlebell picture"></a>
+                    <a href="#"><img src="http://www.blackbeltmag.com/wp-content/uploads/Belt_logo_150px.jpg" alt="jujitsu" title="jujitsi gi picture"></a>
+                    <a href="#"><img src="https://s-media-cache-ak0.pinimg.com/736x/21/4a/56/214a56ddac8237b65f1a7b7924594087.jpg" alt="posture" title="anatomical picture of a spine"></a>
+            </section>
+        </section>
+        <section class="training-menus col-6 col-m-9" id="menus">
+            <section class="strength-training-menu">  
+                <h2>strength training</h2>
+                <p>Formulated and backed by science and reseach, reach your goals with percise planning, observation and programming. I apply my exerience from a strength and condidtion coach to personal training to give the best results.  </p>
+                <a href="#" class="cta">start training</a>
+            </section>
+            <section class="jujitstu-menu">
+                <h2>brazillian jujitsu</h2>
+                <p>The martial art that anyone can do! It provides a great total body work and builds self confidence. If someone trains enough they can even become a competitor. </p>
+                <a href="#" class="cta">start rolling</a>
+            </section>
+            <section class="group-training-menu">
+                <h2>group training</h2>
+                <p>Train in groups of up to 3 people at a time! Muay Thai classes available upon request!  </p>
+                <a href="#" class="cta">start training</a>
+            </section>
+            <section class="muaythai-menu">
+                <h2>muay thai</h2>
+                <p>Get a great work out while working off stress from the work day! This is a great form of exercise that will push you to the limit! You will learn this martial art though drills, pad work, and bag work </p>
+                <a href="#" class="cta">start training</a>
+             </section>    
+        </section>
+        <section class="my-story cf" id="myStory">
+            <h2>My Story</h2>
+            <p class="storyP">effective training, guaranteed results, when you train with me, you'll feel and see the results, of all the time and and effort you have put in to your new lifestyle.</p>     
+            <img src="images/muaythai.jpg" alt="Muay thai picture" title="picture of fight result">      
+            <p>Hi, I'm Michael and I am the founder of Pennini's Fight and Fittness. I have been working as a personal training for 5 years and actively competing and coaching<a href="https://en.wikipedia.org/wiki/Muay_Thai">Muay Thai</a>  and <a href="">Brazilian Jujitsu</a> for the past 12 years. I have always taken pleasure with improving people's lives through personal training and martials arts. Training clients at thier homes allows you to avoid the high prices of hiring a pesonal trainer at a health club. My focus is on weight loss, safe exercise practices, postural restoration and martial arts training.</p>
+        </section>
+        <section id="contact">
+            <h2>Let's start training today!</h2>
+            <form id="form">
+                <fieldset>
+                    <input type="text" name="yourname" placeholder="your name">
+                    <input type="text" name="phone" placeholder="phone">
+                    <input type="text" name="email" placeholder="email">   
+                    <textarea name="message" placeholder="Leave a message" cols="120" rows="10"></textarea>
+                    <button type="submit" name="submit" formaction="#">submit</button> 
+                </fieldset>  
+            </form>
+            <div>
+                <address>123 fake st.<br>City, State 123456</address>
+                <p>555,555,5555</p>
             </div>
         </section>
-
-        <article class="training-programs ccol-6 col-m-9">
-        <h2>custom training programs</h2>
-            <div>
-                 <section class="benefits" id="trainingPrograms">
-                    <h4>see and feel the results of effective training programs</h4>
-                        <a href="#"><img src="images/weightlifter.jpg" alt="barbell"></a>
-                        <a href="#"><img src="http://www.yardbarker.com/uploads/logo/image/2165/140107_icons_boxing.jpg" alt="boxing" title="Boxing gloves"></a>
-                        <a href="#"><img src="http://worldartsme.com/images/kettlebell-clipart-1.jpg" alt="kettlebell" title="kettlebell picture"></a>
-                        <a href="#"><img src="http://www.blackbeltmag.com/wp-content/uploads/Belt_logo_150px.jpg" alt="jujitsu" title="jujitsi gi picture"></a>
-                        <a href="#"><img src="https://s-media-cache-ak0.pinimg.com/736x/21/4a/56/214a56ddac8237b65f1a7b7924594087.jpg" alt="posture" title="anatomical picture of a spine"></a>
-                </section>
-            </div>
-        </article>
-
-
-    <section class="training-menus col-6 col-m-9" id="menus">
-          
-        <aside class="strength-training-menu">  
-        <h2>strength training</h2>
-            
-                <p>Formulated and backed by science and reseach, reach your goals with percise planning, observation and programming. I apply my exerience from a strength and condidtion coach to personal training to give the best results.  </p>
-               
-          <button>start training</button>
-
-        </aside>
-
-        <aside class="jujitstu-menu">
-            <h2>brazillian jujitsu</h2>
-
-                <p>The martial art that anyone can do! It provides a great total body work and builds self confidence. If someone trains enough they can even become a competitor. </p>
-
-            <button>start rolling</button>
-
-        </aside>
-
-        <aside class="group-training-menu">
-            <h2>group training</h2>
-           
-
-               <p>Train in groups of up to 3 people at a time! Muay Thai classes available upon request!  </p>
-
-            <button>start training</button>
-        </aside>
-
-        <aside class="muaythai-menu">
-            <h2>muay thai</h2>
-           
-               <p>Get a great work out while working off stress from the work day! This is a great form of exercise that will push you to the limit! You will learn this martial art though drills, pad work, and bag work </p>
-
-             <button>start training</button>
-         </aside>    
-
-    </section>
-    <article class="my-story cf" id="myStory">
-
-        <h2>My Story</h2>
-
-           <h4>effective training, guaranteed results, when you train with me, you'll feel and see the results, of all the time and and effort you have put in to your new lifestyle.   </h4>     
-
-            <img src="images/muaythai.jpg" alt="Muay thai picture" title="picture of fight result">      
-            <p>      
-            Hi, I'm Michael and I am the founder of Pennini's Fight and Fittness. I have been working as a personal training for 5 years and actively competing and coaching<a href="https://en.wikipedia.org/wiki/Muay_Thai">Muay Thai</a>  and <a href="">Brazilian Jujitsu</a> for the past 12 years. I have always taken pleasure with improving people's lives through personal training and martials arts. Training clients at thier homes allows you to avoid the high prices of hiring a pesonal trainer at a health club. My focus is on weight loss, safe exercise practices, postural restoration and martial arts training. 
-        </p>
-       
-        </article>
-
-   
-        <form id="form">
-    <fieldset>
-         <h2>Let's start training today!</h2>
-        <input type="text" name="yourname" placeholder="your name">
-
-        <input type="text" name="phone" placeholder="phone"> <br>
-
-        <input type="text" name="email" placeholder="email"> <br>    
-
-        <textarea name="message" placeholder="Leave a message" cols="120" rows="10"></textarea> <br>
-
-        <button type="submit" name="submit" formaction ="#">submit</button> 
-          </fieldset>  
-        </form>
-
-     <footer>
-         <a href="#"> &copy; All rights reserved Pennini's Fight and Fitness</a>
-
-         <a href="#" >Site by American Web Design Syndicate</a>
-    </footer>
-
     </main>
-</div>    
+    <footer>
+        <a href="#"> &copy; All rights reserved Pennini's Fight and Fitness</a>
+        <a href="#" >Site by American Web Design Syndicate</a>
+    </footer>  
 </body>
 </html>
