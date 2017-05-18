@@ -1,0 +1,383 @@
+/*global styles and resets*/
+
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Sanchez');
+html {
+    box-sizing:border-box;
+}
+* , *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+body {
+    color:#333;
+    font-family: 'Sanchez', serif;
+    font-size:18px;
+    line-height:1.3;
+}
+ul { 
+    list-style:none;
+}
+a {
+    text-decoration: none;
+}
+.cf:after,.clearfix:after {
+    display:block;
+    clear: both;
+    height:0;
+    visibility:hidden;
+    content:"";
+}
+
+/*navigation*/
+
+nav {
+    float: right;
+    background:#fff;
+    padding:.5em;
+}
+
+span > a {
+    border-bottom: 1px solid #fff;
+    padding:1em 2em;
+    display:inline-block;
+    font-weight: 100;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    color:#42210B;
+    font-family: "league_gothicregular", "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
+}
+span > a:hover {
+    border-bottom:1px solid #102447;
+}
+.main-nav a {
+    border-bottom: 1px solid #fff;
+    padding:1em 2em;
+    display:inline-block;
+    font-weight: 100;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color:#42210B;
+    font-family: "league_gothicregular", "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
+}
+.main-nav a:hover {
+    border-bottom:1px solid #102447;
+}
+/*[alt~="shopping-cart"] {
+
+    width:5px;
+    height:5px;
+}*/
+h1, h2, h3, h4 {
+    font-family: 'Roboto+Condensed', sans-serif;
+    text-transform: capitalize;
+}
+
+/*main content*/
+
+.callout  {
+    margin-left:15em;
+    margin-top: 20em;   
+}
+
+.logo {
+    opacity: .75;
+}
+
+.call-out {
+    background: url(https://media.self.com/photos/587fb60739d082f57cdffb8a/master/pass/first-boxing-class-boxer-situps.jpg);
+    background-repeat: no-repeat;background-size: cover;
+    text-align: center;padding-top: 2em;}
+
+ .call-out h2 {
+    text-transform: capitalize;
+    color: rgb(148, 135, 135);
+}
+
+.call-out p {
+    font-size: 1.4em;
+    color: rgb(148, 135, 135);
+    text-align: center;
+}
+
+.call-out  p {
+    border-top:  .2em solid rgba(169, 152, 152, 0.5);
+    padding-bottom:20em;
+}
+
+.call-out-container {
+    /*border: 5px dashed rgba(63, 58, 64, 0.73); */
+    text-align: center;
+    display: inline-block;
+}
+
+.main-content {
+    margin: 0 auto;
+    font-family: 'Yantramanav', sans-serif; 
+}
+
+/*training*/
+
+.training-programs {
+    background-image: url(http://ampfitness.com/wp-content/uploads/2015/07/amp-kettlebells.jpg);
+    height:55em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.training-programs h2, h3 {
+    padding-top: 1em;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.training-programs p {
+    margin-right:0;
+    font-size: 1.4em;
+    color: #fff; 
+    border-top: 5px solid rgba(169, 152, 152, .5);
+    text-align:center;
+}
+
+.benefits h2 { 
+    padding-top: .4em;
+    border-top:5px solid rgba(169, 152, 152, .5);
+}
+
+.benefits  h4 { 
+    padding: 1em;
+    color:#fff;
+    text-align: center;
+}
+
+.benefits img {
+    margin-top:10em;
+    margin-left: 1.9em;
+    margin-bottom: 10em;
+    padding:1em;
+    border-left: #fff 4px solid;
+    border-bottom: #fff 4px solid;
+    border-right: #fff 4px dotted;
+    border-top: #fff 4px solid;
+}
+
+/* training menu */ 
+
+.training-menus {
+    margin-bottom: 5em;
+    width:100%;
+    background:url(http://www.ezflexmats.com/images/large/color_tatami_BK.jpg);
+}
+
+.strength-training-menu,
+.jujitstu-menu,
+.group-training-menu,
+.muaythai-menu {
+    margin:3em;
+    padding:1em;
+    width: 20%;
+    height: 25em;
+    background: #fff;
+    border:5px solid rgba(169, 152, 152, .5);
+    float: left;    
+}
+
+.strength-training-menu> h2,
+.jujitstu-menu> h2,
+.group-training-menu> h2,
+.muaythai-menu > h2 {
+    
+    border-bottom: #999 4px solid;
+    color: #555;
+    
+}
+
+.strength-training-menu > p,
+.jujitstu-menu > p,
+.group-training-menu > p,
+.muaythai-menu> p {
+    margin-top:2em;
+    letter-spacing:.05em;
+    color: #333;
+
+}
+
+.strength-training-menu, 
+.group-training-menu {
+    margin-left: 19em;  
+}
+
+/* aside > button {
+    margin-top:100px;
+    margin-left:100px;
+    padding: 10px;
+    text-align: center;
+    background-color: #818e81;
+}  */
+
+/* our story */
+
+.my-story {
+    width:100%;
+    margin:0 auto;
+    margin-bottom:5em;
+}
+
+.my-story > h2 {
+    font-size: 40px;
+    color:#333;
+    letter-spacing: .1em;
+    text-align:center;
+}
+
+ .story-h3 {
+ 
+    color:#666;
+    margin:auto;
+    text-align:center;
+    width:30%;
+    
+}
+
+.my-story > p  { 
+    margin-top:2em;
+    margin-left:2em;
+    color: #333;
+    width:30em;
+    text-align: justify;
+    letter-spacing:.1em;
+
+ } 
+
+ .my-story p  > a {
+    color:#333;
+
+ }
+.my-story p  > a:hover{
+    color:#098;
+}
+.my-story img {
+    margin-top: 2em;
+    margin-right: 2em;
+    float: right;
+}
+
+/*form*/ 
+
+#contact {
+    background: url(http://www.ezflexmats.com/images/large/color_tatami_BK.jpg);
+    padding: 1em;}
+
+fieldset {
+    width:40em;
+    margin:auto;
+    border: none;
+}
+fieldset > input,textarea {
+    padding:1em;
+    display: block;
+    text-transform: capitalize;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+fieldset > button {
+    margin-top:2em;
+    margin:auto;
+    padding:1em;
+    width:13%;
+    display: block;
+    border-radius:10%;
+}
+#contact > h2 {
+    margin: auto;
+    margin-top:1em;
+    margin-bottom: 2em;
+    width: 15%;
+    text-align: center;
+    border-bottom: #fff solid 5px; 
+    color:#fff;
+}
+
+input:hover {
+    box-shadow:0 0 .05em .05em red;
+}
+
+button:hover {
+    box-shadow:0 0 .05em .05em red;
+}
+
+textarea:hover {
+    box-shadow:0 0 .05em .05em red;
+
+}
+
+div > address {
+    color: #fff;
+    
+}
+
+div > p {
+    color: white;
+    
+}
+
+/*footer*/
+
+footer {
+    margin:0;
+    padding:1em;
+}
+footer a {
+    
+    padding:.5em;
+    margin-left:11em;
+    color: #333;
+}
+
+
+/* media queries larger screens*/
+
+@media only screen and (max-width: 800px) {
+    nav {
+        float: none;
+    }
+    nav a {
+        margin: 0 1.6em .75em 0;
+    }
+    img {
+        width: 320px;
+    }
+    /*add a media query to change the font size for certain sections*/
+}
+
+/*media queries small devices*/
+
+@media only screen and (max-width: 480px) {
+    h1, nav {
+        display: block;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 1020px) {
+  nav {
+    float: none;
+    display: block;
+  }
+  nav a {
+    margin: 0.2em .75em 0;
+  }
+  img {
+   width: 320px;
+  }
+}
+
+
+
+
+
+
