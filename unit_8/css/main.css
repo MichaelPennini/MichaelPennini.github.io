@@ -15,6 +15,7 @@ body {
     font-family: 'Sanchez', serif;
     font-size:18px;
     line-height:1.3;
+    font-family: "league_gothicregular", "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
 }
 ul { 
     list-style:none;
@@ -165,51 +166,34 @@ h1, h2, h3, h4 {
     border-top: #fff 4px solid;
 }
 
-/* training menu */ 
+/* training menu */
+.wrapper {
+    
+} 
 
 .training-menus {
-    margin-bottom: 5em;
     width:100%;
     background:url(http://www.ezflexmats.com/images/large/color_tatami_BK.jpg);
 }
 
-.strength-training-menu,
-.jujitstu-menu,
-.group-training-menu,
-.muaythai-menu {
-    margin:3em;
-    padding:1em;
-    width: 20%;
-    height: 25em;
+.training-discriptions {
     background: #fff;
     border:5px solid rgba(169, 152, 152, .5);
     float: left;    
 }
-
-.strength-training-menu> h2,
-.jujitstu-menu> h2,
-.group-training-menu> h2,
-.muaythai-menu > h2 {
+.training-discriptions > h2 {
     
     border-bottom: #999 4px solid;
     color: #555;
     
 }
-
-.strength-training-menu > p,
-.jujitstu-menu > p,
-.group-training-menu > p,
-.muaythai-menu> p {
+.training-discriptions > p {
     margin-top:2em;
     letter-spacing:.05em;
     color: #333;
 
 }
 
-.strength-training-menu, 
-.group-training-menu {
-    margin-left: 19em;  
-}
 
 /* aside > button {
     margin-top:100px;
