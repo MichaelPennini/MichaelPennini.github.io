@@ -7,7 +7,7 @@ html {
 }
 * , *:before, *:after {
     box-sizing: inherit;
-    padding: 0;
+    /* padding: 0; */
     margin: 0;
 }
 body {
@@ -33,15 +33,19 @@ a {
 
 /*navigation*/
 
+header {
+    padding: 2%;
+}
+
 nav {
     float: right;
     background:#fff;
-    padding:.5em;
+    
 }
 
-span > a {
+header > a {
     border-bottom: 1px solid #fff;
-    padding:1em 2em;
+    /* padding: 1em 2em; */
     display:inline-block;
     font-weight: 100;
     text-align: right;
@@ -50,12 +54,12 @@ span > a {
     color:#42210B;
     font-family: "league_gothicregular", "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
 }
-span > a:hover {
+header > a:hover {
     border-bottom:1px solid #102447;
 }
 .main-nav a {
     border-bottom: 1px solid #fff;
-    padding:1em 2em;
+    padding: 0 2em;
     display:inline-block;
     font-weight: 100;
     text-align: right;
@@ -79,19 +83,19 @@ h1, h2, h3, h4 {
 
 /*main content*/
 
-.callout  {
-    margin-left:15em;
-    margin-top: 20em;   
-}
 
 .logo {
-    opacity: .75;
+    opacity: .85;
 }
 
 .call-out {
+    margin: 0 3% 3% 3%;
+    padding-top: 2em;
     background: url(https://media.self.com/photos/587fb60739d082f57cdffb8a/master/pass/first-boxing-class-boxer-situps.jpg);
-    background-repeat: no-repeat;background-size: cover;
-    text-align: center;padding-top: 2em;}
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
 
  .call-out h2 {
     text-transform: capitalize;
@@ -110,7 +114,6 @@ h1, h2, h3, h4 {
 }
 
 .call-out-container {
-    /*border: 5px dashed rgba(63, 58, 64, 0.73); */
     text-align: center;
     display: inline-block;
 }
@@ -119,47 +122,57 @@ h1, h2, h3, h4 {
     margin: 0 auto;
     font-family: 'Yantramanav', sans-serif; 
 }
+/*results*/
+
+.results {
+ border-top: #fff 4px solid;
+ border-bottom: #fff 4px solid;
+}
+
+.results > img {
+    margin: 0 1.5%;
+    padding: 1%;
+}
 
 /*training*/
 
 .training-programs {
+    padding:3em;
     background-image: url(http://ampfitness.com/wp-content/uploads/2015/07/amp-kettlebells.jpg);
-    height:55em;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
 }
 
 .training-programs h2, h3 {
-    padding-top: 1em;
+    padding: 1em;
     text-transform: capitalize;
     color: #fff;
 }
 
 .training-programs p {
-    margin-right:0;
     font-size: 1.4em;
     color: #fff; 
     border-top: 5px solid rgba(169, 152, 152, .5);
     text-align:center;
 }
-
-.benefits h2 { 
-    padding-top: .4em;
-    border-top:5px solid rgba(169, 152, 152, .5);
-}
-
-.benefits  h4 { 
-    padding: 1em;
-    color:#fff;
+.benefits-wrapper{
+    border: px solid #fff;
+    display: inline-block;
     text-align: center;
+    width: 90%;
 }
+
+
+.benefits-wrapper h2 { 
+    padding-top: .4em;
+    border-bottom: 5px solid #fff;
+}
+
 
 .benefits img {
-    margin-top:10em;
-    margin-left: 1.9em;
-    margin-bottom: 10em;
-    padding:1em;
+    margin: 3% .5%;
+    padding: 2%;
     border-left: #fff 4px solid;
     border-bottom: #fff 4px solid;
     border-right: #fff 4px dotted;
@@ -167,31 +180,38 @@ h1, h2, h3, h4 {
 }
 
 /* training menu */
-.wrapper {
-    
-} 
+.training-wrapper {
+    width: 80%;
+}
 
 .training-menus {
-    width:100%;
+    
     background:url(http://www.ezflexmats.com/images/large/color_tatami_BK.jpg);
 }
 
 .training-discriptions {
-    background: #fff;
-    border:5px solid rgba(169, 152, 152, .5);
-    float: left;    
+   margin:5% 2%;
+   padding: 1%;
+   width:34%;
+   height: 25em;
+   border:5px solid rgba(169, 152, 152, .5);
+   background: #fff;
+   float: right;
 }
 .training-discriptions > h2 {
-    
-    border-bottom: #999 4px solid;
+    margin: 0 auto;
+    width: 70%;
     color: #555;
-    
+    /* border-bottom: #999 2px solid; */
+    font-size: 1.7em;
+    letter-spacing: .05em;
+    text-align: center;
 }
 .training-discriptions > p {
-    margin-top:2em;
+    padding-top:1em;
     letter-spacing:.05em;
     color: #333;
-
+    border-top: #999 2px solid;
 }
 
 
@@ -232,7 +252,7 @@ h1, h2, h3, h4 {
     margin-left:2em;
     color: #333;
     width:30em;
-    text-align: justify;
+    text-align: left;
     letter-spacing:.1em;
 
  } 
@@ -288,7 +308,7 @@ fieldset > button {
 }
 
 input:hover {
-    box-shadow:0 0 .05em .05em red;
+    box-shadow:0 0 .03em .03em red;
 }
 
 button:hover {
@@ -326,41 +346,94 @@ footer a {
 
 /* media queries larger screens*/
 
-@media only screen and (max-width: 800px) {
-    nav {
+@media only screen and (max-width: 1024px) {
+   .main-nav > a {
+        display: block;
         float: none;
+        text-align: center;
+        margin:  .75em 0; 
     }
     nav a {
-        margin: 0 1.6em .75em 0;
+        float: none;
+        display: block;
+        margin:  .75em 0;
+    }
+    header > a {
+        float: none;
+        clear:both;
     }
     img {
-        width: 320px;
+        width: 50%;
     }
-    /*add a media query to change the font size for certain sections*/
+    body{
+        font-size: .5em;
+    }
+    .my-story > h2 {
+        font-size: 3em;
+    }
+    .my-story > img {
+        float: none;
+        display: block;
+        margin: 0 0 5% 25%;
+    }
+    .my-story > p {
+        float: none;
+        display: block;
+        margin: 0 0 0 26%;
+    } 
+    fieldset > button {
+        width: 7em;
+    } 
 }
 
 /*media queries small devices*/
 
 @media only screen and (max-width: 480px) {
-    h1, nav {
+    h1 {
         display: block;
         text-align: center;
     }
+    .main-nav > a {
+        display: block;
+        float: none;
+        text-align: center;
+        margin:  .75em 0; 
+    }
+    header > a {
+        display: block;
+        float: none;
+        text-align: center;
+        margin:  .75em 0;       
+    }
+    .training-discriptions {
+        display: block;
+        width: 100%;
+        float: none;
+        margin: 4% 0 0 12.5% ;
+    }
+    .training-programs {
+        background-image: none;
+    }
+    img {
+        width: 50%;
+    }
+    .my-story > h2 {
+        font-size: 3em;
+    }
+    .my-story > img {
+        float: none;
+        display: block;
+        margin: 0 0 5% 25%;
+    }
+    .my-story > p {
+        float: none;
+        display: block;
+        margin: 0 0 0 15%;
+    }
+    fieldset > button {
+        width: 7em;
+    }
 }
-@media only screen and (max-width: 1020px) {
-  nav {
-    float: none;
-    display: block;
-  }
-  nav a {
-    margin: 0.2em .75em 0;
-  }
-  img {
-   width: 320px;
-  }
-}
-
-
 
 
 
