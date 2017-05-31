@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Sanchez');
+
 html {
     box-sizing:border-box;
 }
@@ -40,7 +41,6 @@ header {
 nav {
     float: right;
     background:#fff;
-    
 }
 
 header > a {
@@ -82,7 +82,6 @@ h1, h2, h3, h4 {
 }
 
 /*main content*/
-
 
 .logo {
     opacity: .85;
@@ -163,12 +162,10 @@ h1, h2, h3, h4 {
     width: 90%;
 }
 
-
 .benefits-wrapper h2 { 
     padding-top: .4em;
     border-bottom: 5px solid #fff;
 }
-
 
 .benefits img {
     margin: 3% .5%;
@@ -180,6 +177,7 @@ h1, h2, h3, h4 {
 }
 
 /* training menu */
+
 .training-wrapper {
     width: 80%;
 }
@@ -208,7 +206,8 @@ h1, h2, h3, h4 {
     text-align: center;
 }
 .training-discriptions > p {
-    padding-top:1em;
+    font-size: 1.5em;
+    padding-top:3em;
     letter-spacing:.05em;
     color: #333;
     border-top: #999 2px solid;
@@ -239,27 +238,23 @@ h1, h2, h3, h4 {
 }
 
  .story-h3 {
- 
+    font-size: 1.5em;
     color:#666;
     margin:auto;
     text-align:center;
-    width:30%;
-    
+    width:30%; 
 }
 
 .my-story > p  { 
     margin-top:2em;
-    margin-left:2em;
     color: #333;
     width:30em;
     text-align: left;
     letter-spacing:.1em;
-
  } 
 
  .my-story p  > a {
     color:#333;
-
  }
 .my-story p  > a:hover{
     color:#098;
@@ -343,7 +338,6 @@ footer a {
     color: #333;
 }
 
-
 /* media queries larger screens*/
 
 @media only screen and (max-width: 1024px) {
@@ -353,10 +347,8 @@ footer a {
         text-align: center;
         margin:  .75em 0; 
     }
-    nav a {
-        float: none;
-        display: block;
-        margin:  .75em 0;
+    nav  {
+        float:none;
     }
     header > a {
         float: none;
@@ -377,6 +369,7 @@ footer a {
         margin: 0 0 5% 25%;
     }
     .my-story > p {
+        font-size: 1.5em;
         float: none;
         display: block;
         margin: 0 0 0 26%;
@@ -386,12 +379,15 @@ footer a {
     } 
 }
 
-/*media queries small devices*/
+    /*media queries small devices*/
 
-@media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 480px) {
     h1 {
         display: block;
         text-align: center;
+    }
+    nav {
+        float:none;
     }
     .main-nav > a {
         display: block;
@@ -405,11 +401,17 @@ footer a {
         text-align: center;
         margin:  .75em 0;       
     }
+    .training-menus {
+        padding-top: 5%;
+    }
+    .training-wrapper{
+        padding-bottom: 5%;
+    }
     .training-discriptions {
         display: block;
         width: 100%;
         float: none;
-        margin: 4% 0 0 12.5% ;
+        margin: 4% 0 0 12.5%;
     }
     .training-programs {
         background-image: none;
@@ -426,12 +428,19 @@ footer a {
         margin: 0 0 5% 25%;
     }
     .my-story > p {
+        font-size: 1.5em;
         float: none;
         display: block;
-        margin: 0 0 0 15%;
+        margin: 0 auto;
     }
     fieldset > button {
         width: 7em;
+    }
+    div > address {
+        font-size: 2em;
+    }
+    div > p {
+        font-size: 2em;
     }
 }
 
